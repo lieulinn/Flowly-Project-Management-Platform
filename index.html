@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flowly — Project Management for Modern Teams</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts: Playful Hand-Drawn & Body Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">
+        <i class="fa-solid fa-pen-ruler"></i> Flowly<span class="doodle-dot">.</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#preview" class="nav-link">Preview</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-hand btn-sm" id="themeToggle" aria-label="Toggle Theme">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <button class="btn-hand btn-primary" id="openModalBtn">Get Started</button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="container hero-container">
+      <div class="hero-content reveal">
+        <div class="doodle-badge">✨ Hand-Crafted SaaS Experience</div>
+        <h1>Project management platform for modern teams<span class="hand-underline">~</span></h1>
+        <p>Flowly memadukan kesederhanaan sketsa visual dengan alur kerja tim modern. Didesain oleh <strong>M.Lie Ulin Nuha</strong> (Founder awshopedia & Lvara.academy).</p>
+        <div class="hero-actions">
+          <button class="btn-hand btn-primary btn-lg" id="heroModalBtn">Start Free Trial 🚀</button>
+          <a href="#preview" class="btn-hand btn-secondary btn-lg">Explore Dashboard ✏️</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUSTED BY -->
+  <section class="trusted section">
+    <div class="container">
+      <p class="trusted-title">Dipercaya oleh ekosistem inovatif:</p>
+      <div class="trusted-logos reveal">
+        <span class="brand-sketch">awshopedia</span>
+        <span class="brand-sketch">Lvara.academy</span>
+        <span class="brand-sketch">StudioNoer</span>
+        <span class="brand-sketch">UGM TechLab</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features section" id="features">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="hand-tag">#Features</span>
+        <h2>Features built for clarity & speed</h2>
+      </div>
+      <div class="features-grid">
+        <div class="hand-card reveal">
+          <div class="card-icon">📌</div>
+          <h3>Visual Task Boards</h3>
+          <p>Kelola task dengan style papan sketsa interaktif yang simpel dan intuitif.</p>
+        </div>
+        <div class="hand-card reveal">
+          <div class="card-icon">⏱️</div>
+          <h3>Real-time Sync</h3>
+          <p>Kolaborasi instan bersama tim tanpa delay dengan arsitektur data cepat.</p>
+        </div>
+        <div class="hand-card reveal">
+          <div class="card-icon">🌱</div>
+          <h3>Workflow Automation</h3>
+          <p>Otomatisasi rutinitas proyek dengan trigger sederhana ala flowchart.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DASHBOARD PREVIEW -->
+  <section class="preview section" id="preview">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="hand-tag">#InteractivePreview</span>
+        <h2>Sneak peek inside Flowly Workspace</h2>
+      </div>
+      <div class="dashboard-sketch-frame reveal">
+        <div class="sketch-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="sketch-title">Flowly Workspace — Sprint #14</span>
+        </div>
+        <div class="sketch-body">
+          <div class="sketch-sidebar">
+            <div class="sketch-line"></div>
+            <div class="sketch-line short"></div>
+            <div class="sketch-line"></div>
+          </div>
+          <div class="sketch-content">
+            <div class="sketch-card-board">
+              <div class="sketch-box">Task To-Do 📝</div>
+              <div class="sketch-box active">In Progress ⚡</div>
+              <div class="sketch-box done">Completed 🎉</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works section" id="how-it-works">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="hand-tag">#HowItWorks</span>
+        <h2>3 Steps to level up your workflow</h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card reveal">
+          <span class="step-num">1</span>
+          <h3>Create Workspace</h3>
+          <p>Buat ruang kerja tim Anda hanya dalam waktu kurang dari 2 menit.</p>
+        </div>
+        <div class="step-card reveal">
+          <span class="step-num">2</span>
+          <h3>Invite Teammates</h3>
+          <p>Undang anggota tim awshopedia & Lvara.academy Anda via link.</p>
+        </div>
+        <div class="step-card reveal">
+          <span class="step-num">3</span>
+          <h3>Ship Projects Fast</h3>
+          <p>Selesaikan milestone proyek secara teratur dan terpantau jelas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing section" id="pricing">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="hand-tag">#Pricing</span>
+        <h2>Simple, transparent plans</h2>
+        <div class="pricing-toggle-wrap">
+          <span>Monthly</span>
+          <label class="switch">
+            <input type="checkbox" id="pricingToggle">
+            <span class="slider"></span>
+          </label>
+          <span>Yearly <small class="save-badge">(Save 20%)</small></span>
+        </div>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="hand-card reveal">
+          <h3>Starter</h3>
+          <div class="price"><span class="amount" data-monthly="0" data-yearly="0">$0</span> <small>/month</small></div>
+          <ul class="plan-list">
+            <li>✔ Up to 3 Projects</li>
+            <li>✔ Basic Task Boards</li>
+            <li>✔ Community Support</li>
+          </ul>
+          <button class="btn-hand btn-secondary btn-full">Start Free</button>
+        </div>
+
+        <div class="hand-card popular reveal">
+          <span class="hand-badge">Best Choice</span>
+          <h3>Pro Team</h3>
+          <div class="price"><span class="amount" data-monthly="19" data-yearly="15">$19</span> <small>/month</small></div>
+          <ul class="plan-list">
+            <li>✔ Unlimited Projects</li>
+            <li>✔ Advanced Automations</li>
+            <li>✔ Priority 24/7 Support</li>
+          </ul>
+          <button class="btn-hand btn-primary btn-full">Get Pro Team</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SLIDER -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="hand-tag">#Testimonials</span>
+        <h2>Loved by creators & Founders</h2>
+      </div>
+
+      <div class="slider-container reveal">
+        <div class="slider-wrapper" id="sliderWrapper">
+          <div class="slide-card">
+            <p>"Flowly mengubah cara ekosistem Lvara.academy memanajemen kurikulum dan pengerjaan proyek siswa. Sangat fleksibel!"</p>
+            <h4>— Tim Kurikulum Lvara.academy</h4>
+          </div>
+          <div class="slide-card">
+            <p>"Efisiensi operasional toko online di awshopedia meningkat pesat berkat visualisasi task board Flowly yang menyenangkan."</p>
+            <h4>— Product Manager awshopedia</h4>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button id="prevBtn" class="btn-hand btn-sm">👈 Prev</button>
+          <button id="nextBtn" class="btn-hand btn-sm">Next 👉</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ ACCORDION -->
+  <section class="faq section" id="faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="hand-tag">#FAQ</span>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button class="faq-question">Apa itu Flowly? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Flowly adalah platform manajemen proyek modern dengan gaya visual unik yang dirancang untuk mempermudah kolaborasi tim secara intuitif.</p></div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question">Apakah ada uji coba gratis? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Ya, Anda bisa mencoba paket Starter secara gratis selamanya tanpa perlu kartu kredit.</p></div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question">Siapa Founder di balik Flowly? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Flowly didirikan oleh M.Lie Ulin Nuha, pencetus awshopedia dan Lvara.academy.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta section">
+    <div class="container">
+      <div class="cta-card reveal">
+        <h2>Ready to simplify your team's workflow?</h2>
+        <p>Bergabunglah dengan ribuan tim yang telah beralih ke Flowly hari ini.</p>
+        <button class="btn-hand btn-primary btn-lg" id="ctaModalBtn">Get Started Now ✨</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2026 Flowly by M.Lie Ulin Nuha (Founder awshopedia & Lvara.academy).</p>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-card">
+      <button class="close-modal" id="closeModalBtn">&times;</button>
+      <h3>Get Started with Flowly ✏️</h3>
+      <p>Masukkan email Anda untuk memulai trial gratis:</p>
+      <form id="modalForm">
+        <input type="email" placeholder="nama@email.com" required class="hand-input">
+        <button type="submit" class="btn-hand btn-primary btn-full">Join Workspace</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
