@@ -7,26 +7,28 @@
   --font-hand: 'Caveat', cursive;
   --font-body: 'Plus Jakarta Sans', sans-serif;
 
-  /* Light Theme Palette (Paper Sketch) */
-  --bg-color: #fefcf6;
-  --bg-card: #ffffff;
-  --text-main: #1e1e1e;
-  --text-muted: #555555;
-  --accent: #2563eb;
-  --accent-yellow: #fde047;
-  --border-color: #1e1e1e;
+  /* Light Theme Palette (Warm Editorial / Coffee Sketch) */
+  --bg-color: #FDFBF7;
+  --bg-card: #FFFFFF;
+  --text-main: #292524;
+  --text-muted: #57534E;
+  --accent: #D97706;
+  --accent-secondary: #451A03;
+  --accent-yellow: #D97706;
+  --border-color: #292524;
   --hand-border: 255px 15px 225px 15px/15px 225px 15px 255px;
 }
 
 [data-theme="dark"] {
-  /* Dark Theme Palette (Chalkboard) */
-  --bg-color: #121824;
-  --bg-card: #1e2638;
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
-  --accent: #38bdf8;
-  --accent-yellow: #facc15;
-  --border-color: #f8fafc;
+  /* Dark Theme Palette (Warm Charcoal) */
+  --bg-color: #1C1917;
+  --bg-card: #2C2724;
+  --text-main: #FFFFFF;
+  --text-muted: #E7E5E4;
+  --accent: #D97706;
+  --accent-secondary: #451A03;
+  --accent-yellow: #D97706;
+  --border-color: #FFFFFF;
 }
 
 * {
@@ -90,12 +92,12 @@ body {
 }
 
 .btn-primary {
-  background: var(--accent-yellow);
-  color: #000;
+  background: var(--accent);
+  color: #fff;
 }
 
 .btn-secondary {
-  background: var(--accent);
+  background: var(--accent-secondary);
   color: #fff;
 }
 
@@ -267,8 +269,8 @@ body {
 .sketch-content { width: 70%; }
 .sketch-card-board { display: flex; gap: 15px; }
 .sketch-box { flex: 1; border: 2px solid var(--border-color); padding: 15px; border-radius: var(--hand-border); font-family: var(--font-hand); font-weight: 700; }
-.sketch-box.active { background: var(--accent-yellow); color: #000; }
-.sketch-box.done { background: #bbf7d0; color: #000; }
+.sketch-box.active { background: var(--accent); color: #fff; }
+.sketch-box.done { background: #F5E7D3; color: var(--text-main); }
 
 /* ==========================================
    PRICING TOGGLE
@@ -308,7 +310,7 @@ input:checked + .slider:before { transform: translateX(20px); }
 /* ==========================================
    CTA & FOOTER
    ========================================== */
-.cta-card { background: var(--accent-yellow); color: #000; border: 3px solid #000; border-radius: var(--hand-border); box-shadow: 6px 6px 0px #000; padding: 50px 30px; text-align: center; }
+.cta-card { background: var(--accent); color: #fff; border: 3px solid var(--border-color); border-radius: var(--hand-border); box-shadow: 6px 6px 0px var(--border-color); padding: 50px 30px; text-align: center; }
 .cta-card h2 { font-family: var(--font-hand); font-size: 3rem; margin-bottom: 10px; }
 footer { text-align: center; border-top: 2px dashed var(--border-color); padding: 30px 0; font-family: var(--font-hand); font-size: 1.2rem; }
 
